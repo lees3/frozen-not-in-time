@@ -1,0 +1,77 @@
+html {
+  font-family: "Fredoka One", sans-serif;
+  background-image: repeating-linear-gradient(-45deg, #d4fdff, #d4fdff 10px, #c9fcff 10px, #c9fcff 20px);
+  text-shadow: 2px 2px rgba(0, 0, 0, .4);
+}
+
+.btn-ghost {
+  color: #c09;
+  border-style: solid;
+  border-radius: 4px;
+  border-color: #990073;
+}
+
+.btn-ghost:hover {
+
+}
+
+h1 {
+  color: #990073;
+  animation: slide-in 250ms ease-out forwards;
+  filter: blur(7px);
+  transition: all .25s linear;
+}
+
+p {
+  color: #c09;
+  max-width: 19em;
+}
+
+.wrapper {
+  position: relative;
+  border-top: 8px solid #b3fbff;
+  border-bottom: 8px solid #b3fbff;
+}
+
+.cherry {
+  top: .25em;
+  z-index: 6;
+  right: 1em;
+  animation: slide-in 250ms ease-out;
+}
+
+.vanilla-fudge {
+  top: 5.25em;
+  z-index: 5;
+  right: 1em;
+}
+
+.chocolate-chip {
+  top: 10.25em;
+  z-index: 4;
+  right: 1em;
+}
+
+.mint-chip {
+  top: 15.25em;
+  z-index: 2;
+  right: 1em;
+}
+
+.cone {
+  top: 23.25em;
+  z-index: 3;
+  right: 1em;
+}
+
+@keyframes slide-in {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 0%;
+  }
+
+}
