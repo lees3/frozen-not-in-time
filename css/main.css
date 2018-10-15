@@ -17,9 +17,8 @@ html {
 
 h1 {
   color: #990073;
-  animation: slide-in 250ms ease-out forwards;
   filter: blur(7px);
-  transition: all .25s linear;
+  transition: all 5s ease-in;
 }
 
 p {
@@ -34,44 +33,53 @@ p {
 }
 
 .cherry {
-  top: .25em;
   z-index: 6;
   right: 1em;
-  animation: slide-in 250ms ease-out;
+  position: absolute;
+  bottom: 100%;
+  animation: slide-in 2s ease-out forwards;
 }
 
 .vanilla-fudge {
-  top: 5.25em;
   z-index: 5;
   right: 1em;
+  position: absolute;
+  bottom: 100%;
+  animation: slide-in 1.5s ease-out forwards;
 }
 
 .chocolate-chip {
-  top: 10.25em;
   z-index: 4;
   right: 1em;
+  position: absolute;
+  bottom: 100%;
+  animation: slide-in 1s ease-out forwards;
 }
 
 .mint-chip {
-  top: 15.25em;
   z-index: 2;
   right: 1em;
+  position: absolute;
+  bottom: 100%;
+  animation: slide-in .5s ease-out forwards;
 }
 
 .cone {
-  top: 23.25em;
   z-index: 3;
   right: 1em;
+  position: absolute;
+  bottom: 100%;
+  animation: slide-in .2s ease-out forwards;
 }
 
 @keyframes slide-in {
 
   0% {
-    bottom: 100%;
+    transform: translateY(0em);
   }
 
   100% {
-    bottom: 0%;
+    transform: translateY(20em);
   }
 
 }
